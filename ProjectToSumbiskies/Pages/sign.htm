@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sign Up</title>
+    <link href="foundation.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+
+        function validateMyForm() {
+           alert("work");
+           var x = document.forms["details"].["email"].value;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            var valid = true;
+
+            // Validate first name
+
+            if (document.getElementById('firstname').value.length == 0) {
+                document.getElementById('fn').innerHTML = "missing first name";
+                valid = false;
+
+            }
+
+            // Validate last name
+
+            if (document.getElementById('lastname').value.length == 0) {
+                document.getElementById('ln').innerHTML = "missing last name";
+                valid = false;
+
+            }
+
+            // Validate phone
+
+            if (document.getElementById('phone').value.length == 0 || document.getElementById('phone').value.length!=9) {
+                document.getElementById('dc').innerHTML = "missing phone number or it is not the proper length";
+            
+                valid = false;
+
+            }
+
+            // Validate email
+
+           
+            if (document.getElementById('email').value.length == 0 || atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            
+                document.getElementById('eadd').innerHTML = "email address is missing or is not correct";
+                valid = false;
+
+            }
+            
+
+            // Validate CIC
+
+            if (document.getElementById('CIC').value.length == 0 || document.details.CIC.length!=9) {
+                document.getElementById('cicp').innerHTML = "missing citizen identification code or is not proper length";
+                valid = false;
+
+            }
+
+            //Validate Address
+
+            if (document.getElementById('add').value.length == 0 || document.getElementById('add').value.length<5) {
+                document.getElementById('radd').innerHTML = "missing residence address";
+                valid = false;
+            }
+
+            //Validate Password
+
+            if (document.getElementById('Password').value.length == 0 || document.getElementById('Password').value.length<=5) {
+                document.getElementById('sc').innerHTML = "Secure code is missing or password is shorter than 5 characters";
+                valid = false;
+            }
+            if(valid==true)
+            {
+            window.alert("all is well");
+            }
+         
+
+            }
+
+           
+
+        
+
+
+</script>
+</head>
+<body>
+   <!-- Nav Bar -->
+   
+  <div class="row">
+    <div class="large-12 columns">
+       <ul class="button-group">
+         <li><a href="Home.htm" class="button">Home</a></li> 
+         <li><a href="sign.htm" class="button">Sign Up</a></li>
+         <li><a href="add.htm" class="button">Addition & Deduction</a></li> 
+         <li><a href="mult.htm" class="button">Multiplication & Division</a></li> 
+         <li><a href="test.htm" class="button">Test</a></li>
+        </ul>
+      </div>
+      <h1>The fun side of Math<small> Mathematical puns are the first sine of madness</small></h1>
+      <hr />
+    </div>
+ 
+  <!-- End Nav -->
+ 
+ 
+  <!-- Main Page Content -->
+ 
+  <div class="row">
+ 
+    <!-- Main Content -->
+    <div class="large-9 columns" id="content">
+ 
+       <h3>Enter your details. These will be processed by [REDACTED].</h3>
+        <h6>Written by Big Brother on December 13, 1984.</h6>
+ 
+        <div class="row">
+          <div class="large-6 columns">
+           <form action="sign.htm" name="details">
+           
+            First name: <input type="text" id="firstname" maxlength="10" size="10"/> <p id="fn"></p>
+            
+            Last name: <input type="text" id="lastname" maxlength="10" size="10" /> <p id="ln"></p>
+
+            Citizen Identification Code: <input id="CIC" type="text" maxlength="9" size="10" /> <p id="cicp"></p>
+            
+            Dialer Code: <input id="phone" type="text" maxlength="9" /> <p id="dc"></p>
+            
+            Email Address: <input id="email" type="text"  /> <p id="eadd"></p>
+            
+            Residence Address: <input id="add" type="text" /> <p id="radd"></p>
+            
+            Secure Code: <input id="Password" type="password" /> <p id="sc"></p>
+            
+           </form>
+           
+           <button type="button" onclick="javascript:validateMyForm()">Submit</button>
+          
+           
+          </div>
+          <div class="large-6 columns">
+            <img src="http://www.meh.ro/wp-content/uploads/2012/07/meh.ro10062.png" height=200px width=200px alt="Big Brother is love, Big Brother is life"  />
+          </div>
+        </div>
+        </div>
+ 
+        <p>Don't screw up. Big Brother is watching.</p>
+        
+</div>
+ 
+      <hr />
+ 
+     
+
+    <!-- End Main Content -->
+
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright Oceana.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="button-group">
+         <li><a href="Home.htm" class="button">Home</a></li> 
+         <li><a href="sign.htm" class="button">Sign Up</a></li>
+         <li><a href="add.htm" class="button">Addition & Deduction</a></li> 
+         <li><a href="mult.htm" class="button">Multiplication & Division</a></li> 
+         <li><a href="test.htm" class="button">Test</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

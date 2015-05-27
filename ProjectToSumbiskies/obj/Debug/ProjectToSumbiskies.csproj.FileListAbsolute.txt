@@ -1,0 +1,5 @@
+c:\users\pyroshifter\documents\visual studio 2010\Projects\ProjectToSumbiskies\ProjectToSumbiskies\bin\ProjectToSumbiskies.dll
+c:\users\pyroshifter\documents\visual studio 2010\Projects\ProjectToSumbiskies\ProjectToSumbiskies\bin\ProjectToSumbiskies.pdb
+c:\users\pyroshifter\documents\visual studio 2010\Projects\ProjectToSumbiskies\ProjectToSumbiskies\obj\Debug\ProjectToSumbiskies.dll
+c:\users\pyroshifter\documents\visual studio 2010\Projects\ProjectToSumbiskies\ProjectToSumbiskies\obj\Debug\ProjectToSumbiskies.pdb
+C:\Users\PyroShifter\Documents\Visual Studio 2010\Projects\ProjectToSumbiskies\ProjectToSumbiskies\obj\Debug\ProjectToSumbiskies.csprojResolveAssemblyReference.cache

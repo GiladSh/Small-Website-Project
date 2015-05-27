@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectToSumbiskies", "ProjectToSumbiskies\ProjectToSumbiskies.csproj", "{BC776F29-A202-4F6C-98B7-C2B739470DA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC776F29-A202-4F6C-98B7-C2B739470DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC776F29-A202-4F6C-98B7-C2B739470DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC776F29-A202-4F6C-98B7-C2B739470DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC776F29-A202-4F6C-98B7-C2B739470DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
